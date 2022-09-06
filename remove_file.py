@@ -4,8 +4,8 @@ import time
 
 def remove(path, days=30):
     limit = time.time() - days * 86400
-    for f in os.listdir(path):
-        path_file = os.path.join(path, f)
+    for filename in os.listdir(path):
+        path_file = os.path.join(path, filename)
         if os.path.isfile(path_file) and os.stat(path_file).st_mtime < limit:
             print(path_file)
             os.remove(path_file)

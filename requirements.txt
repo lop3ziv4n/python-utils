@@ -1,2 +1,5 @@
 psutil
 pandas
+Pillow
+requests
+beautifulsoup4
